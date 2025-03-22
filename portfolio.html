@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <title>Ayodeji-Portfolio</title>  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:@400..900&family=Dancing+Script:wght@400..700&family=Pacifico&family=Rochester&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/b4ea6e037d.js" crossorigin="anonymous"></script>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="icon" type="image/x-icon" href="">
+
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>    
+ <!--navbar-->
+<nav class="nav">
+    <ul class="nav-list">
+        <li class="active"><i class="fa-solid fa-house"></i><span class="tooltip">Home</span></li>
+        <li><i class="fa-solid fa-user"></i><span class="tooltip">About</span></li>
+        <li><i class="fa-solid fa-book"></i><span class="tooltip">Resume</span></li>
+        <li><i class="fa-solid fa-briefcase"></i><span class="tooltip">Portfolio</span></li>
+        <li id="contact1"><i class='bx bx-message'></i><span class="tooltip">Contact</span></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="box">
+        <section class="section home active">
+            <div class="home-info">
+                <h3>Hello I'm</h3>
+                <h1>Olowogoke Ayodeji</h1>
+                <h3 class="text-animation" >I am a   <span id="text1"></span>                
+                </h3>
+                <div class="btn-sci">
+                        <a href="#contact" class="btn">Hire Me</a>
+                        <div class="sci">
+                            <a href="https://github.com/Djowo1" target="_blank"> <i class='bx bxl-github'></i>
+                                <span class="tooltip">Github</span>
+                            </a>
+                            <a href="mailto:itzdjowo@gmail.com" target="_blank"><i class='bx bx-envelope' ></i>
+                                <span class="tooltip">E-mail</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/olowogoke-ayodeji-877b31222/?trk=opento_sprofile_goalscard" target="_blank"><i class='bx bxl-linkedin' ></i>
+                                <span class="tooltip">Linkedin</span>
+                            </a>
+                            <a href="tel:+2348079167199" target="_blank"><i class='bx bx-phone' ></i>
+                                <span class="tooltip">Phone Number</span>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="img-wrapper">
+                <div class="img-box home-img">
+                    <img src="images/port image.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section about">
+            <div class="img-wrapper">
+                <div class="img-box about-img">
+                    <img src="images/port image.jpg" alt="">
+                </div>
+            </div>
+            <div class="about-info">
+                <h2 class="title">About Me</h2>
+                <h3>Frontend Web Developer</h3>
+                <p class="desc">"Hi, I'm Olowogoke Ayodeji, a junior frontend developer with a mind for creating engaging and user-friendly interfaces. I started learning to code and create some beautiful designs and interfaces after my Bachelor's degree where I gained hands-on experience with HTML5, CSS3, SASS, JavaScript, and Tailwindcss.
+                    <br><br>
+                     I enjoy working on personal projects, such as building responsive websites and web applications. I'm excited to bring my skills and knowledge to a dynamic team and contribute to innovative projects.
+
+                    <br><br>
+                    In my free time, when I am not coding, you can catch me baking and trying out new recipes, playing my guitar or reading a classic romance novel(my favorite). I work everytime while jamming my favorite music, usually old classic blues and country music.
+                    <br><br>
+                    I'm a quick learner, a team player, and always eager to learn and improve. I'm looking forward to collaborating with like-minded individuals and growing as a developer."                    
+                    </p>
+                <a href="#" class="btn">View More</a>
+            </div>
+        </section>
+
+        <section class="section resume">
+            <h2 class="title">Resume</h2>
+            <div class="tab-box">
+
+             <!--  <div class="tab-list resume-list active">
+                    <h3>Experience</h3>
+                </div>
+            -->
+                <div class="tab-list resume-list active">                   
+                    <h3>Skills</h3>
+                </div>
+                <div class="tab-list resume-list">
+                    <h3>Education</h3>
+                </div>
+            </div>
+            <div class="tab-wrapper">
+                <!--
+            
+                <div class="tab-grid resume-box experience active">
+                    <div class="tab-item resume-item">
+                        <h4>202</h4>
+                        <p>experience Test</p>
+                    </div>
+                </div>-->
+              
+                <div class="tab-grid resume-box skills active">
+                    <div class="tab-item resume-item">
+                        <div class="colors"><i class="fa-brands fa-html5"></i></div>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="tab-item resume-item">
+                        <div class="colors"><i class="fa-brands fa-css3"></i></div>
+                        <p>CSS</p>
+                    </div>
+                    <div class="tab-item resume-item">
+                        <div class="colors"><i class="fa-brands fa-sass"></i></div> 
+                        <p>SASS</p>
+                    </div>
+                    <div class="tab-item resume-item">
+                        <div class="colors"><i class='bx bxl-tailwind-css'></i> </div>
+                        <p>Tailwind.css</p>
+                    </div>
+                    <div class="tab-item resume-item">
+                        <div class="colors"><i class="fa-brands fa-js"></i></div>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                
+                <div class="tab-grid resume-box education">                  
+                    <div class="tab-item resume-item">
+                        <h4>2025</h4>
+                        <h4>Responsive Web Design Course</h4>
+                        <h4>Online Course,  CodeCamp Certificate.</h4>
+                        <p> I also Completed a comprehensive course in web designs, demonstrating proficiency in website development, where I was given a certificate of confirmation.
+                            <p class="like"><a href="https://www.freecodecamp.org/certification/Djowo/responsive-web-design" target="_blank">Certificate Link</a></p>
+                        </p>
+                    </div>
+                    <div class="tab-item resume-item">
+                        <h4>2024</h4>
+                        <h4>Programming Course</h4>
+                        <h4>Online Course.</h4>
+                        <p>Completed a comprehensive course in a programming course, demonstrating proficiency in website development, using some development tools like HTML, CSS, JavaScript, Tailwind.css and SASS.
+                        </p>
+                    </div>
+                    <div class="tab-item resume-item">
+                        <h4>2017 - 2024</h4>
+                        <h4>Undergraduate Course in Geology</h4>
+                        <h4>Physical Course</h4>
+                        <p>Had my first undergraduate certificate for a bachelor degree program in Geology.</p>                    
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <section class="section portfolio">
+            <h2 class="title">Portfolio</h2>
+            <div class="tab-box">
+                <div class="tab-list portfolio-list active">
+                    <h3>My Work</h3>
+                </div>
+                <div class="tab-list portfolio-list">
+                    <h3>My Service</h3>
+                </div>
+            </div>
+            <div class="tab-wrapper">
+                <div class="tab-grid portfolio-box work active">
+                    <div class="tab-item portfolio-item">
+                       <div class="work-img">
+                        <img src="portfolio img/cake.jpg" alt="">
+                       </div>
+                       <div class="work-info">
+                        <h4>Frontend Project For A Cake Website</h4>
+                        <p> <span class="spun"> Project Overview:</span> Developed a responsive frontend website for a cake business. <br><br>
+                           <span class="spun"> Key Features:</span>
+                            - Responsive design
+                            - Interactive image gallery
+                            - Add to cart feature
+                            - Customizable cake cutting options
+                            - Direct ordering functionality
+                            
+                           <br><br>
+                           <span class="spun">  Challenges Overcome:</span> Ensuring cross-browser compatibility, optimizing images, and implementing responsive design. <br><br>
+                           <span class="spun">  Results:</span> Successfully launched the website, enhancing user engagement and improving customer satisfaction.
+                        </p>
+                        <div class="tech-used">
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="portfolio-icon work-icon">
+                            <a href="#"><span class="me"><i class='bx bx-left-arrow-alt' ></i></span><span class="tooltip">Preview</span></a>
+                            <a href="#"><i class='bx bxl-github'></i><span class="tooltip">Github Repostory</span></a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="tab-item portfolio-item">
+                       <div class="work-img">
+                        <img src="portfolio img/surefit.jpg" alt="">
+                       </div>
+                       <div class="work-info">
+                        <h4>Frontend Project For A Gym Website</h4>
+
+                        <p> <span class="spun"> 
+                        Project Overview:</span> Developed a responsive frontend website for a gym, providing a platform for users to explore fitness options, including exercise routines, yoga, and muscle-building programs.                        
+                        <br><br>                        
+                        <span class="spun"> Key Features: </span>
+                        - Responsive design for seamless user experience across various screen sizes
+                        - Interactive image gallery with 3D animations and CSS effects
+                        - Slideshow showcasing gym facilities and services
+                        - Beautiful interface and attractive layout design                        
+                        <br><br>                        
+                        <span class="spun"> Challenges Overcome:</span>
+                        - Ensuring responsiveness across different devices and screen sizes
+                        - Implementing interactive slideshow and picture animations
+                        - Optimizing images for fast loading times                        
+                        <br><br>                        
+                        <span class="spun"> Results: </span>
+                        - Successfully launched the website, enhancing user engagement and providing an immersive fitness experience.
+                        - Improved user satisfaction with the website's responsiveness and interactive features.
+                        </p>                        
+                        <div class="tech-used">
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="portfolio-icon work-icon">
+                            <a href="#"><span class="me"><i class='bx bx-left-arrow-alt' ></i></span><span class="tooltip">Preview</span></a>
+                            <a href="#"><i class='bx bxl-github'></i><span class="tooltip">Github Repostory</span></a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="tab-item portfolio-item">
+                       <div class="work-img">
+                        <img src="portfolio img/Form image 1.PNG" alt="">
+                       </div>
+                       <div class="work-info">
+                        <h4>Form Authentication Page</h4>
+                      <p><span class="spun">  Project Overview:</span> Developed a responsive frontend website, featuring a login/sign-up page with form authentication.
+                        <br><br>
+                        <span class="spun">  Key Features:</span>
+                        - Responsive design for seamless user experience across various screen sizes
+                        - Cool design and layout with interactive elements
+                        - Login/sign-up page with form authentication
+                        - Request for user credentials (username, password)
+                        - Validation and authorization for secure login
+                        - Redirect to landing page upon successful login or signup
+                        <br><br>                
+                    
+                       <span class="spun"> Challenges Overcome:</span>
+                        - Ensuring responsiveness and compatibility across devices
+                        - Implementing secure form authentication
+                        - Designing an intuitive and user-friendly login/sign-up page                        
+                        <br><br>                        
+                        <span class="spun"> Results:</span>
+                        - Successfully launched the website, providing an engaging and secure user experience.
+                        - Improved user satisfaction with the website's responsiveness and interactive features.
+                        </p>
+                        <div class="tech-used">
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="portfolio-icon work-icon">
+                            <a href="#"><span class="me"><i class='bx bx-left-arrow-alt' ></i></span><span class="tooltip">Preview</span></a>
+                            <a href="#"><i class='bx bxl-github'></i><span class="tooltip">Github Repostory</span></a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="tab-item portfolio-item">
+                       <div class="work-img">
+                        <img src="portfolio img/image searcher  1.PNG" alt="">
+                       </div>
+                       <div class="work-info">
+                        <h4>Image Searcher Project</h4>
+                        <p><span class="spun"> 
+                        Project Overview:</span> Developed a responsive image searcher website, utilizing API integration to search for various images.                      
+                        
+                        <br><br>
+                        <span class="spun">  Key Features:</span>
+                        - Responsive design for seamless user experience across devices
+                        - Image search functionality using API integration
+                        - High-quality image display with zoom-in capability
+                        - Clickable images linking to their source
+                        - Intuitive and user-friendly layout                        
+                        <br><br>
+                        
+                        <span class="spun"> Challenges Overcome:</span>
+                        - Integrating API for image search functionality
+                        - Ensuring responsive design and image quality
+                        - Implementing zoom-in and image linking features                        
+                        <br><br>
+                        
+                        <span class="spun"> Results:</span>
+                        - Successfully launched the website, providing an engaging and user-friendly image search experience.
+                        - Improved user satisfaction with the website's responsiveness and image quality.
+                        </p>                        
+                        <div class="tech-used">
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="portfolio-icon work-icon">
+                            <a href="#"><span class="me"><i class='bx bx-left-arrow-alt' ></i></span><span class="tooltip">Preview</span></a>
+                            <a href="#"><i class='bx bxl-github'></i><span class="tooltip">Github Repostory</span></a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="tab-item portfolio-item">
+                       <div class="work-img">
+                        <img src="portfolio img/coming soon 1.PNG" alt="">
+                       </div>
+                       <div class="work-info">
+                        <h4>Coming Soon Website for Gym</h4>
+<p><span class="spun"> 
+Project Overview:</span> Developed a responsive coming soon website for a gym, utilizing animations and coordinations. 
+
+<br><br>
+
+<span class="spun"> Key Features:</span>
+- Responsive design for seamless user experience across devices
+- Animations and coordinations for engaging visual effects
+- Coming soon page with countdown timer
+- Gym branding and identity integration
+- Simple and intuitive layout
+
+<br><br>
+
+<span class="spun"> Challenges Overcome:</span>
+- Creating engaging animations and coordinations
+- Ensuring responsive design and compatibility
+- Integrating gym branding and identity
+
+<br><br>
+
+<span class="spun"> Results:</span>
+- Successfully launched the coming soon website, generating buzz and anticipation for the gym's launch.
+- Improved user satisfaction with the website's responsiveness and engaging visuals.
+</p>
+
+                        <div class="tech-used">
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="portfolio-icon work-icon">
+                            <a href="#"><span class="me"><i class='bx bx-left-arrow-alt' ></i></span><span class="tooltip">Preview</span></a>
+                            <a href="#"><i class='bx bxl-github'></i><span class="tooltip">Github Repostory</span></a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="tab-item portfolio-item">
+                       <div class="work-img">
+                        <img src="portfolio img/music.jpg" alt="">
+                       </div>
+                       <div class="work-info">
+                        <h4>Music App Project</h4>
+
+                        <p><span class="spun"> 
+                        Project Overview:</span> Developed a music app allowing users to play, mix, and interact with their favorite songs.
+                        
+                        <br><br>
+                        
+                        <span class="spun"> Key Features:</span>
+                        - Playback control (play, pause, stop, repeat)
+                        - Mixing and blending capabilities
+                        - Preview and sample functionality
+                        - Song information display (title, artist, label)
+                        - Customizable design and layout
+                        - Background and color scheme changes
+                        - Interactive and engaging user interface
+                        
+                        <br><br>
+                        
+                        <span class="spun">  Challenges Overcome:</span>
+                        - Implementing seamless audio playback and control
+                        - Designing an intuitive and user-friendly interface
+                        - Integrating mixing and blending functionality
+                        - Ensuring compatibility across devices
+                        
+                        <br><br>
+                        
+                        <span class="spun"> Results:</span>
+                        - Successfully launched the music app, providing users with a unique and engaging music experience.
+                        - Improved user satisfaction with the app's interactive features and customization options.
+                        </p>
+                        
+                        
+                        <div class="tech-used">
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="portfolio-icon work-icon">
+                            <a href="#"><span class="me"><i class='bx bx-left-arrow-alt' ></i></span><span class="tooltip">Preview</span></a>
+                            <a href="#"><i class='bx bxl-github'></i><span class="tooltip">Github Repostory</span></a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="tab-item portfolio-item">
+                       <div class="work-img">
+                        <img src="portfolio img/clock.jpg" alt="">
+                       </div>
+                       <div class="work-info">
+                        <h4>Digital Alarm Clock Project</h4>
+
+                        <p><span class="spun"> 
+                        Project Overview:</span> Developed a functional digital alarm clock with various features and customization options.
+                        
+                        <br><br>
+                        
+                        <span class="spun"> Key Features:</span>
+                        - Setting and triggering alarms
+                        - Background and color scheme changes
+                        - Font style and size customization
+                        - Weather forecast integration
+                        - Greetings and notifications
+                        - Time format options (12-hour and 24-hour)
+                        - Responsive design for seamless user experience
+                        <br><br>
+                        
+                        
+                        <span class="spun"> Challenges Overcome:</span>
+                        - Implementing alarm functionality and scheduling
+                        - Integrating weather forecast API
+                        - Designing an intuitive and user-friendly interface
+                        - Ensuring compatibility across devices
+                        
+                        <br><br>
+                        
+                        <span class="spun"> Results:</span>
+                        - Successfully launched the digital alarm clock, providing users with a functional and customizable time-keeping experience.
+                        - Improved user satisfaction with the app's features and responsiveness.
+                        </p>
+                        
+                        <div class="tech-used">
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="portfolio-icon work-icon">
+                            <a href="#"><span class="me"><i class='bx bx-left-arrow-alt' ></i></span><span class="tooltip">Preview</span></a>
+                            <a href="#"><i class='bx bxl-github'></i><span class="tooltip">Github Repostory</span></a>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="tab-grid portfolio-box service">
+                    <div class="tab-item portfolio-item">
+                        <div class="portfolio-icon service-icon">
+                           <span class="minee">👩🏻‍💻</span>
+                            <a href="#"><span class="minee2"><i class='bx bx-left-arrow-alt' ></i></span></a>
+                        </div>
+                        <h4>Frontend Web Development</h4>
+                        <p>As a skilled frontend web developer, I craft responsive, user-friendly, and visually appealing web applications.
+<br><br>
+<span class="spun"> Services:</span>
+                            
+                            - Custom Website Development
+                            - Responsive Web Design
+                            - Web Application Development
+                            - Browser Compatibility
+                            <br><br>
+                            <span class="spun"> Tools and Technologies:</span>
+                            
+                            - HTML5
+                            - CSS3
+                            - JavaScript
+                            - SASS
+                            - Tailwind CSS
+                            - UI/UX Principles
+                            <br><br>
+                            <span class="spun">  Deliverables:</span>
+                            
+                            - Fully functional website or web application
+                            - Customized design and layout
+                            - Responsive and mobile-friendly interface
+                            - Cross-browser compatibility
+                            - Documentation and maintenance support
+                            <br><br>
+                            <span class="spun">  Why Choose Me:</span>
+                            
+                            - Attention to detail
+                            - Collaborative approach
+                            - Timely delivery
+                            </p>
+                    </div>
+                    <div class="tab-item portfolio-item">
+                        <div class="portfolio-icon service-icon">
+                            <span class="minee">🎨</span>
+                            <a href="#"><span class="minee2"><i class='bx bx-left-arrow-alt' ></i></span></a>
+                        </div>
+                        <h4>UI/UX Designs</h4>
+                        <p>I am a skilled UI/UX designer, I create intuitive, user-friendly, and visually appealing digital experiences.
+                            <br><br>
+                            <span class="spun">   Services:</span>
+                            
+                            - User Research and Analysis
+                            - Wireframing and Prototyping
+                            - Visual Design and Branding
+                            - Interaction Design and Animation
+                            - Usability Testing and Feedback
+                            <br><br>
+                            <span class="spun">  Tools and Technologies:</span>
+                            
+                            - Sketch
+                            - Figma
+                            - Adobe XD
+                            <br><br>
+                            <span class="spun">  Deliverables:</span>
+                            
+                            - User personas and journey maps
+                            - Wireframes and prototypes
+                            - High-fidelity design mockups
+                            - Design style guides
+                            <br><br>
+                            <span class="spun"> Why Choose Me:</span>
+                            
+                            - User-centered approach
+                            - Collaborative design process
+                            - Data-driven design decisions
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact">
+            <h2 class="title">Contact</h2>
+            <div class="contact-wrapper">
+              <h3  id="contact">Let us Work Together, <span class="contact">Contact Me</span> Via:</h3>
+             <div class="contact-links">
+                
+                <div class="btn-sci">
+                    <div class="sci">
+                        <a href="https://github.com/Djowo1" target="_blank"> <i class='bx bxl-github'></i>
+                            <span class="tooltip">Github</span>
+                        </a>
+                        <a href="mailto:itzdjowo@gmail.com" target="_blank"><i class='bx bx-envelope' ></i>
+                            <span class="tooltip">E-mail</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/olowogoke-ayodeji-877b31222/?trk=opento_sprofile_goalscard" target="_blank"><i class='bx bxl-linkedin' ></i>
+                            <span class="tooltip">Linkedin</span>
+                        </a>
+                        <a href="tel:+2348079167199" target="_blank"><i class='bx bx-phone' ></i>
+                            <span class="tooltip">Phone Number</span>
+                        </a>
+                        <a href="http://www.instagram.com/goke_jowo" target="_blank"><i class='bx bxl-instagram' ></i>
+                            <span class="tooltip">Instagram</span>
+                        </a>
+                        <a href="http://wa.me/+2348138422068" target="_blank"><i class='bx bxl-whatsapp' ></i>
+                            <span class="tooltip">WhatsAp</span>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            </div>
+        </section>
+    </div>
+
+
+</div> 
+    <script src="portfolio.js"></script>
+
+</body>
+</html>
