@@ -407,6 +407,7 @@ animation:  color 5s linear infinite;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
     overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     visibility: hidden;
     opacity: 0;
@@ -462,8 +463,13 @@ animation:  color 5s linear infinite;
     margin-top: 1rem;
 }
 
+.resume-box.education {
+    height: 75%;
+}
+
 .resume-box.skills {
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    height: 75%;
 }
 
 .resume-box.skills .resume-item:hover {
@@ -813,7 +819,7 @@ object-fit: cover;
 
     .about-info {
         margin-top: 9rem;
-        height:600px;
+        height:200px;
         overflow-y:auto;
         overflow-x: auto;
         width: 500px;
@@ -976,4 +982,4 @@ object-fit: cover;
 .like a:hover {
     color: rgb(65, 207, 218);
     
-}
+}  

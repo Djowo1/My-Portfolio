@@ -7,6 +7,7 @@ const portfolioLists = document.querySelectorAll('.portfolio-list');
 const portfolioBoxs = document.querySelectorAll('.portfolio-box');
 const servicesLists = document.querySelectorAll('.services-list');
 const servicesBoxs = document.querySelectorAll('.services-box');
+const scrollContainer = document.querySelector('.about-info');
 
 // Navbar action and all section actions along with cube rotation when navbar is clicked
 navs.forEach((nav, idx) => {
@@ -117,4 +118,9 @@ function initTypingAnimation() {
   }
   
   document.addEventListener('DOMContentLoaded', initTypingAnimation);
+
+  scrollContainer.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    scrollContainer.scrollTop += event.deltaY;
+  });
   
