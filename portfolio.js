@@ -122,11 +122,14 @@ function initTypingAnimation() {
 
   scrollContainer.addEventListener('wheel', (event) => {
     event.preventDefault();
-    scrollContainer.scrollTop += event.deltaY;
+    const scrollSpeed = 10; // adjust scroll speed
+    scrollContainer.scrollTop += event.deltaY / scrollSpeed;
   });
   
   scrollContainer1.addEventListener('touchmove', (event) => {
     event.preventDefault();
-    scrollContainer.scrollTop += event.touches[0].clientY;
+    const scrollSpeed = 10; // adjust scroll speed
+    scrollContainer.scrollTop += event.touches[0].clientY / scrollSpeed;
   });
+  
   

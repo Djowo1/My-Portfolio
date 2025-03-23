@@ -825,6 +825,8 @@ object-fit: cover;
         -webkit-overflow-scrolling: touch;
         overflow-x: auto;
         width: 500px;
+        transition: scroll-top 0.5s ease-in-out;
+
     }
 
     .resume,
