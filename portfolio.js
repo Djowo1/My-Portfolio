@@ -120,16 +120,44 @@ function initTypingAnimation() {
   
   document.addEventListener('DOMContentLoaded', initTypingAnimation);
 
+
+
+  
+
   scrollContainer.addEventListener('wheel', (event) => {
     event.preventDefault();
     const scrollSpeed = 10; // adjust scroll speed
-    scrollContainer.scrollTop += event.deltaY / scrollSpeed;
+    const containerHeight = scrollContainer.offsetHeight;
+    const scrollPosition = scrollContainer.scrollTop;
+    if (event.deltaY > 0) {
+      scrollContainer.scrollTop += scrollSpeed;
+      if (scrollPosition + scrollSpeed >= containerHeight) {
+        scrollContainer.scrollTop = containerHeight;
+      }
+    } else {
+      scrollContainer.scrollTop -= scrollSpeed;
+      if (scrollPosition - scrollSpeed <= 0) {
+        scrollContainer.scrollTop = 0;
+      }
+    }
   });
   
   scrollContainer1.addEventListener('touchmove', (event) => {
     event.preventDefault();
     const scrollSpeed = 10; // adjust scroll speed
-    scrollContainer.scrollTop += event.touches[0].clientY / scrollSpeed;
+    const containerHeight = scrollContainer.offsetHeight;
+    const scrollPosition = scrollContainer.scrollTop;
+    if (event.touches[0].clientY > 0) {
+      scrollContainer.scrollTop += scrollSpeed;
+      if (scrollPosition + scrollSpeed >= containerHeight) {
+        scrollContainer.scrollTop = containerHeight;
+      }
+    } else {
+      scrollContainer.scrollTop -= scrollSpeed;
+      if (scrollPosition - scrollSpeed <= 0) {
+        scrollContainer.scrollTop = 0;
+      }
+    }
   });
   
   
