@@ -22,9 +22,9 @@ navs.forEach((nav, idx) => {
       
       activeSection.classList.remove('active');
     }
-    if (idx === 0) { // Home link
+    if (idx === 0) { 
       sections[0].classList.add('active');
-    } else if (idx === navs.length - 1) { // Contact link
+    } else if (idx === navs.length - 1) { 
       sections[sections.length - 1].classList.add('active');
     } else {
       sections[idx].classList.add('active');
@@ -94,15 +94,13 @@ function initTypingAnimation() {
     function animateText(text) {
       const letters = text.split('');
       let i = 0;
-      let left = 0;
   
       const intervalId = setInterval(() => {
         if (i < letters.length) {
           const span = document.createElement('span');
           span.textContent = letters[i];
-          span.style.left = `${left}px`;
           text1.appendChild(span);
-          left += -3; // 2px spacing between letters
+         
           i++;
         } else {
           clearInterval(intervalId);
@@ -110,9 +108,9 @@ function initTypingAnimation() {
             text1.innerHTML = '';
             currentTextIndex = (currentTextIndex + 1) % texts.length;
             animateText(texts[currentTextIndex]);
-          }, 2000); // 2 seconds
+          }, 2000); 
         }
-      }, 250); // 200ms delay between each letter
+      }, 250);
     }
   
     animateText(texts[currentTextIndex]);
@@ -126,7 +124,7 @@ function initTypingAnimation() {
 
   scrollContainer.addEventListener('wheel', (event) => {
     event.preventDefault();
-    const scrollSpeed = 10; // adjust scroll speed
+    const scrollSpeed = 10; 
     const containerHeight = scrollContainer.offsetHeight;
     const scrollPosition = scrollContainer.scrollTop;
     if (event.deltaY > 0) {
@@ -141,23 +139,6 @@ function initTypingAnimation() {
       }
     }
   });
-  
-  scrollContainer1.addEventListener('touchmove', (event) => {
-    event.preventDefault();
-    const scrollSpeed = 10; // adjust scroll speed
-    const containerHeight = scrollContainer.offsetHeight;
-    const scrollPosition = scrollContainer.scrollTop;
-    if (event.touches[0].clientY > 0) {
-      scrollContainer.scrollTop += scrollSpeed;
-      if (scrollPosition + scrollSpeed >= containerHeight) {
-        scrollContainer.scrollTop = containerHeight;
-      }
-    } else {
-      scrollContainer.scrollTop -= scrollSpeed;
-      if (scrollPosition - scrollSpeed <= 0) {
-        scrollContainer.scrollTop = 0;
-      }
-    }
-  });
+ 
   
   

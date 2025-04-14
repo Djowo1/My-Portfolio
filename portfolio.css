@@ -197,7 +197,9 @@ a:hover .tooltip,
 }
 
 .text-animation {
-    font-weight: bold;    
+    font-weight: bold;   
+    text-align: center;
+ 
   }
   
   .text-animation span {
@@ -207,14 +209,27 @@ a:hover .tooltip,
     color: var(--main-color);
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
+    animation: animate-text 0.5s forwards;
+
   }
   
-  .text-animation span span {
+  .text-animation span {
    margin-left: 5px;
   
   }
   
-  .text-animation span span::after {
+  @keyframes animate-text {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }  
+
+  .text-animation span::after {
     content: "";
     background-color: var(--main-color);
     width: calc(100% + 8px);
@@ -241,6 +256,7 @@ a:hover .tooltip,
     display: flex;
     align-items: center;
     margin-top: 20px;
+    gap: 0.5rem;
 }
 
 .btn{
@@ -257,6 +273,20 @@ a:hover .tooltip,
 
 .btn:hover {
     box-shadow: none;
+}
+.btn2{
+    display: inline-flex;
+    padding: 1.2rem 3rem;
+    background: var(--main-color);
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn2:hover {
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 .home-info .btn-sci .sci {
@@ -817,17 +847,17 @@ object-fit: cover;
         margin-bottom:2rem;
     }
 
-    .about-info {
-        margin-top: 9rem;
-        height:200px;
-        scroll-behavior: smooth;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-        overflow-x: auto;
-        width: 500px;
-        transition: scroll-top 0.5s ease-in-out;
-
-    }
+   
+.about-info {
+    margin-top: 9rem;
+    height: 200px;
+    scroll-behavior: smooth;
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch;
+    width: 100%; 
+    max-width: 500px;
+  }
+  
 
     .resume,
     .portfolio {
@@ -838,7 +868,7 @@ object-fit: cover;
         padding-bottom: 16rem;
     }
 
-    .text-animation span span {
+    .text-animation span{
         font-size: 15px;
     }
 }
@@ -896,7 +926,7 @@ object-fit: cover;
 
     .home-info {
         margin-top:9rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .img-box {
@@ -909,9 +939,17 @@ object-fit: cover;
         text-align: center;
     }
 
-    .about-info{
-        width: 315px;
+    .text-animation {
+        font-size: 10px;
+        margin-right: 0;
+        width: 100%;
     }
+    
+    .text-animation span {
+        font-size: 14px;
+        margin-left: .2rem;
+    }
+
 }
 
 @media screen and (max-width:350px) {
@@ -954,7 +992,7 @@ object-fit: cover;
     body {
         width: 100%;
     }
-    .text-animation span span {
+    .text-animation span {
         font-size: 15px;
         margin-left: .2rem;
     }
