@@ -837,13 +837,13 @@ object-fit: cover;
     .img-box {
         width: 35rem;
         height: 35rem;
-        top: 9rem;
+        top: 7rem;
         margin-bottom:2rem;
     }
     .about-img{
         width: 28rem;
         height: 28rem;
-        top: 13rem;
+        top: 10rem;
         margin-bottom:2rem;
     }
 
@@ -928,7 +928,11 @@ object-fit: cover;
     .img-box {
         width: 30rem;
         height: 30rem;
-        top: 11rem;
+        top: 9rem;
+    }
+
+    .about-img {
+        top: 4rem;
     }
 
     .about-info .title {
