@@ -849,13 +849,9 @@ object-fit: cover;
 
    
 .about-info {
-    margin-top: 9rem;
     height: 200px;
-    scroll-behavior: smooth;
     overflow-y: auto; 
     -webkit-overflow-scrolling: touch;
-    width: 100%; 
-    max-width: 500px;
   }
   
 

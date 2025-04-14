@@ -140,5 +140,21 @@ function initTypingAnimation() {
     }
   });
  
+
+  const aboutInfo = document.querySelector('.about-info');
+let startY = 0;
+let scrollTop = 0;
+
+aboutInfo.addEventListener('touchstart', (event) => {
+  startY = event.touches[0].clientY;
+  scrollTop = aboutInfo.scrollTop;
+});
+
+aboutInfo.addEventListener('touchmove', (event) => {
+  const deltaY = event.touches[0].clientY - startY;
+  aboutInfo.scrollTop = scrollTop - deltaY;
+  event.preventDefault(); // Prevent page scrolling
+});
+
   
   
