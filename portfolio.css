@@ -10,13 +10,13 @@
 }
 
 :root {
-    --nav-bg-color: rgba(255, 255, 255, .1);
-    --bg-color: #171f2b;
-    --second-bg-color: #1f2733;
+    --nav-bg-color: rgba(73, 54, 54, 0.322);
+    --bg-color: #E2D4B7;
+    --second-bg-color: #F7F4F4;
     --third-bg-color: #2d3542;
-    --main-color:#0ef;
-    --white-color:#fff;
-    --tab-list-color:#7c8594;
+    --main-color:#513F32;
+    --white-color:#2d3542;
+    --tab-list-color:#513F32;
 }
 
 ::selection {
@@ -59,7 +59,7 @@ p{
     transform: translate(-50%);
     width: 40rem;
     padding: 2rem 0;
-    background: var(--nav-bg-color);
+    background-color:#fff;
     border-radius: 5rem;
     z-index: 100;
     transform: rotate(-270deg);
@@ -107,7 +107,7 @@ p{
     background: var(--main-color);
     border-radius: .4rem;
     font-size: 1.6rem;
-    color: var(--bg-color);
+    color: var(--second-bg-color);
     font-weight: 500;
     white-space: nowrap;
     opacity: 0;
@@ -159,7 +159,7 @@ a:hover .tooltip,
 }
 
 .section:nth-child(even) {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .section.about {
@@ -266,13 +266,14 @@ a:hover .tooltip,
     border-radius: 5rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
-    color: var(--bg-color);
+    color: var(--second-bg-color);
     font-weight: 600;
     transition: .3s;
 }
 
 .btn:hover {
     box-shadow: none;
+    color: var(--second-bg-color);
 }
 .btn2{
     display: inline-flex;
@@ -280,13 +281,14 @@ a:hover .tooltip,
     background: var(--main-color);
     border-radius: 5rem;
     font-size: 1.6rem;
-    color: var(--bg-color);
+    color: var(--second-bg-color);
     font-weight: 600;
     transition: .3s;
 }
 
 .btn2:hover {
     box-shadow: 0 0 1rem var(--main-color);
+    color: var(--second-bg-color);
 }
 
 .home-info .btn-sci .sci {
@@ -306,7 +308,7 @@ a:hover .tooltip,
 
 .home-info .btn-sci a:hover{
     background: var(--main-color);
-    color: var(--bg-color);
+    color: var(--second-bg-color);
 }
 
 .img-box {
@@ -404,7 +406,7 @@ animation:  color 5s linear infinite;
     align-items: center;
     width: 100%;
     border-bottom: .3rem solid var(--tab-list-color);
-    color: var(--tab-list-color);
+    color: var(--second-bg-color);
     cursor: pointer;
     transition: .5s;
 }
@@ -444,6 +446,7 @@ animation:  color 5s linear infinite;
     transform: scale(.8);
 }
 
+
 .tab-grid.resume-box.active,
 .tab-grid.portfolio-box.active {
     visibility: visible;
@@ -456,7 +459,7 @@ animation:  color 5s linear infinite;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--third-bg-color);
+    background-color: var(--main-color);
     border-radius: .8rem;
     padding: 2rem;
 }
@@ -495,6 +498,7 @@ animation:  color 5s linear infinite;
 
 .resume-box.education {
     height: 75%;
+        color: var(--second-bg-color);
 }
 
 .resume-box.skills {
@@ -504,7 +508,7 @@ animation:  color 5s linear infinite;
 
 .resume-box.skills .resume-item:hover {
     animation: bgPulse 1s infinite alternate; }
-@keyframes bgPulse { from { background: var(--tab-list-color); } to { background:var(--third-bg-color); 
+@keyframes bgPulse { from { background: var(--tab-list-color); } to { background:var(--second-bg-color); 
 
 cursor:pointer;
 box-shadow: 0 0 2rem;}
@@ -518,21 +522,23 @@ box-shadow: 0 0 2rem;}
 .resume-box.skills .resume-item .colors {
     font-size: 8rem;
     transition: .3s;
+    color: #e2d4b7;;
 }
 
 
 .resume-box.skills .resume-item:hover {
-    color: var(--main-color);
+    color: var(--second-bg-color);
 }
 
 .resume-box.skills .resume-item p {
     margin-top: 0;
+        color: var(--second-bg-color);
 
 }
 
 .resume-box.education .resume-item:hover {
     animation: bgPulse 3s infinite alternate; }
-@keyframes bgPulse { from { background: var(--tab-list-color); } to { background:var(--third-bg-color); 
+@keyframes bgPulse { from { background: var(--second-bg-color); } to { background:var(--third-bg-color); 
 
 cursor:pointer;
 box-shadow: 0 0 2rem;}
@@ -567,7 +573,7 @@ box-shadow: 0 0 2rem;}
     top: 0;
     width: 100%;
     height: 100%;
-    background: var(--third-bg-color);
+    background: var(--second-bg-color);
     border-radius: .8rem;
     z-index: 1;
     opacity: 0;
@@ -612,7 +618,7 @@ object-fit: cover;
 
 .portfolio-item .work-info .tech-used {
     color: var(--main-color);
-    border-bottom: .1rem solid var(--white-color);
+    border-bottom: .1rem solid var(--main-color);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
@@ -621,15 +627,16 @@ object-fit: cover;
     position: relative;
     display: inline-flex;
     padding: 1rem;
-    background: var(--white-color);
+    background: var(--main-color);
     border-radius: 50%;
     font-size: 2.5rem;
-    color: var(--bg-color);
+    color: var(--second-bg-color);
     transition: .3s;
 }
 
 .portfolio-item .work-icon a:hover{
-    background: var(--main-color);
+    background: var(--second-bg-color);
+    color: var(--main-color);
 }
 
 .portfolio-item .work-icon a:nth-child(1) {
@@ -654,28 +661,31 @@ object-fit: cover;
 }
 
 .portfolio-item .service-icon .minee {
-    color: var(--main-color);
+    color: var(--second-bg-color);
 }
 
 .portfolio-item .service-icon a {
-    background: var(--main-color);
+    background: var(--second-bg-color);
+    color: var(--main-color);
 }
 
 .portfolio-item .service-icon a .minee2 {
     transform: rotate(-135deg);
     transition: .3s;
+    color: var(--main-color);
 }
 
 .portfolio-item .service-icon a:hover .minee2 {
     transform: rotate(-180deg);
 }
 
-.portfolio-box.service .portfolio-item h4 {
+.portfolio-box.service .portfolio-item h4,.portfolio-box.service .portfolio-item  p {
     transition: .3s;
+    color: var(--second-bg-color);
 }
 
 .portfolio-box.service .portfolio-item:hover h4 {
-    color: var(--main-color);
+    color: var(--second-bg-color);
 }
 
 .contact-wrapper {
@@ -692,7 +702,7 @@ object-fit: cover;
    justify-content: center;
     transition: .3s;
     animation:  colors 2s linear infinite;
-    color: var(--main-color);
+    color: var(--second-bg-color);
     left: 0;
 }
 
@@ -701,7 +711,7 @@ object-fit: cover;
     margin-right: 2rem;
 }
 .spun {
-    color: var(--main-color);
+    color: var(--second-bg-color);
 }
 
 .contact-wrapper .btn-sci{
@@ -733,13 +743,13 @@ object-fit: cover;
 @keyframes colors {
 
     40% {
-      color: 0 0 2rem var(--second-bg-color);
+      color: 0 0 2rem var(--white-color);
     }
     60% {
       color: 0 0 2rem pink;
     }
     80% {
-      color: 0 0 2rem var(--white-color);
+      color: 0 0 2rem var(--second-bg-color);
     }
     100% {
       color: 0 0 2rem olive;
@@ -1012,17 +1022,17 @@ object-fit: cover;
 }
 
 .like  {
-    border: 2px solid #0ef;
+    border: 2px solid  rgb(148, 200, 204);
     width: fit-content;
     border-radius: 9px;    
 
 }
 
 .like a {
-    color: var(--main-color);
+    color: var(--second-bg-color);
     
 }
 .like a:hover {
-    color: rgb(65, 207, 218);
+    color: rgb(148, 200, 204);
     
 }  

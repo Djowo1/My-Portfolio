@@ -108,9 +108,9 @@ function initTypingAnimation() {
             text1.innerHTML = '';
             currentTextIndex = (currentTextIndex + 1) % texts.length;
             animateText(texts[currentTextIndex]);
-          }, 2000); 
+          }, 4000); 
         }
-      }, 250);
+      }, 450);
     }
   
     animateText(texts[currentTextIndex]);
