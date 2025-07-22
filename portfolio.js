@@ -10,7 +10,8 @@ const servicesBoxs = document.querySelectorAll('.services-box');
 const scrollContainer = document.querySelector('.about-info');
 const scrollContainer1 = document.querySelector('.about-info');
 
-// Navbar action and all section actions along with cube rotation when navbar is clicked
+
+*
 navs.forEach((nav, idx) => {
   nav.addEventListener('click', () => {
     console.log(`Clicked nav ${idx}`);
@@ -33,7 +34,7 @@ navs.forEach((nav, idx) => {
   });
 });
 
-// Resume section when clicking tab-list
+*
 resumeLists.forEach((list, idx) => {
   list.addEventListener('click', () => {
     console.log(`Clicked resume tab ${idx}`);
@@ -50,7 +51,7 @@ resumeLists.forEach((list, idx) => {
   });
 });
 
-// Portfolio section when clicking tab-list
+*
 portfolioLists.forEach((list, idx) => {
   list.addEventListener('click', () => {
     console.log(`Clicked portfolio tab ${idx}`);
@@ -67,7 +68,7 @@ portfolioLists.forEach((list, idx) => {
   });
 });
 
-// Services section when clicking tab-list
+*
 servicesLists.forEach((list, idx) => {
   list.addEventListener('click', () => {
     console.log(`Clicked services tab ${idx}`);
