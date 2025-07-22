@@ -11,7 +11,7 @@ const scrollContainer = document.querySelector('.about-info');
 const scrollContainer1 = document.querySelector('.about-info');
 
 
-*
+
 navs.forEach((nav, idx) => {
   nav.addEventListener('click', () => {
     console.log(`Clicked nav ${idx}`);
@@ -34,7 +34,7 @@ navs.forEach((nav, idx) => {
   });
 });
 
-*
+
 resumeLists.forEach((list, idx) => {
   list.addEventListener('click', () => {
     console.log(`Clicked resume tab ${idx}`);
@@ -51,7 +51,7 @@ resumeLists.forEach((list, idx) => {
   });
 });
 
-*
+
 portfolioLists.forEach((list, idx) => {
   list.addEventListener('click', () => {
     console.log(`Clicked portfolio tab ${idx}`);
@@ -68,7 +68,7 @@ portfolioLists.forEach((list, idx) => {
   });
 });
 
-*
+
 servicesLists.forEach((list, idx) => {
   list.addEventListener('click', () => {
     console.log(`Clicked services tab ${idx}`);
