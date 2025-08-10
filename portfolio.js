@@ -154,7 +154,7 @@ aboutInfo.addEventListener('touchstart', (event) => {
 aboutInfo.addEventListener('touchmove', (event) => {
   const deltaY = event.touches[0].clientY - startY;
   aboutInfo.scrollTop = scrollTop - deltaY;
-  event.preventDefault(); // Prevent page scrolling
+  event.preventDefault(); 
 });
 
   
