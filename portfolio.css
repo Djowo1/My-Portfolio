@@ -390,7 +390,7 @@ animation:  color 5s linear infinite;
 
 .resume {
     padding-top: 2rem;
-    padding-bottom: 28rem;
+    padding-bottom: 10rem;
 }
 
 .tab-box {
@@ -1036,3 +1036,9 @@ object-fit: cover;
     color: rgb(148, 200, 204);
     
 }  
+
+.btn2 {
+    border: 1px solid var(--bg-color);
+    background-color:none;
+    color: var(--bg-color);
+}
