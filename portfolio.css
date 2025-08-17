@@ -278,12 +278,13 @@ a:hover .tooltip,
 .btn2{
     display: inline-flex;
     padding: 1.2rem 3rem;
-    background: var(--main-color);
+    background: var(--second-bg-color);
     border-radius: 5rem;
     font-size: 1.6rem;
-    color: var(--second-bg-color);
+    color: var(--main-color);
     font-weight: 600;
     transition: .3s;
+    border: 2px solid var(--main-color);
 }
 
 .btn2:hover {
@@ -711,7 +712,9 @@ object-fit: cover;
     margin-right: 2rem;
 }
 .spun {
-    color: var(--second-bg-color);
+    color: var(--main-color);
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .contact-wrapper .btn-sci{
@@ -1036,9 +1039,3 @@ object-fit: cover;
     color: rgb(148, 200, 204);
     
 }  
-
-.btn2 {
-    border: 1px solid var(--bg-color);
-    background-color:none;
-    color: var(--bg-color);
-}

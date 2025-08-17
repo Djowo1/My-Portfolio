@@ -89,7 +89,7 @@ servicesLists.forEach((list, idx) => {
 
 function initTypingAnimation() {
     const text1 = document.getElementById('text1');
-    const texts = ['Frontend Web Developer', 'UI / UX Designer'];
+    const texts = ['Frontend Web Developer', 'React Developer'];
     let currentTextIndex = 0;
   
     function animateText(text) {
